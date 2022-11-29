@@ -1,7 +1,12 @@
 import { StyleSheet, View } from "react-native";
+import ProductImage from "./ProductImage";
 
 const Container = () => {
-  return <View style={styles.container}></View>;
+  return (
+    <View style={styles.container}>
+      <ProductImage />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -18,7 +23,8 @@ const styles = StyleSheet.create({
       height: 2
     },
     shadowOpacity: 0.5,
-    elevation: 10
+    elevation: 10,
+    overflow: "hidden"
   }
 });
 
