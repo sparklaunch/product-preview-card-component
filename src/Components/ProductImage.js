@@ -8,12 +8,22 @@ const ProductImage = () => {
         source={require("../../assets/Product.jpg")}
       />
       <View style={styles.contentContainer}>
-        <Text style={styles.productLabel}>PERFUME</Text>
-        <Text style={styles.productTitle}>Gabrielle Essence Eau De Parfum</Text>
-        <Text style={styles.productDetail}>
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </Text>
+        <View>
+          <Text style={styles.productLabel}>PERFUME</Text>
+          <Text style={styles.productTitle}>
+            Gabrielle Essence Eau De Parfum
+          </Text>
+          <Text style={styles.productDetail}>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </Text>
+        </View>
+        <View>
+          <View style={styles.priceLabel}>
+            <Text style={styles.discountedPrice}>$149.99</Text>
+            <Text style={styles.normalPrice}>$169.99</Text>
+          </View>
+        </View>
       </View>
     </View>
   );
@@ -29,7 +39,8 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     padding: 20,
-    flex: 2
+    flex: 2,
+    justifyContent: "space-between"
   },
   productLabel: {
     fontSize: 14,
@@ -48,6 +59,21 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "rgb(101, 102, 106)",
     lineHeight: 24
+  },
+  priceLabel: {
+    flexDirection: "row",
+    alignItems: "center"
+  },
+  discountedPrice: {
+    fontSize: 36,
+    fontWeight: "bold",
+    color: "rgb(55, 117, 94)",
+    marginRight: 10
+  },
+  normalPrice: {
+    fontSize: 14,
+    textDecorationLine: "line-through",
+    color: "rgb(115, 114, 119)"
   }
 });
 
