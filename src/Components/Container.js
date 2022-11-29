@@ -1,10 +1,10 @@
 import { StyleSheet, View } from "react-native";
-import ProductImage from "./ProductImage";
+import Content from "./Content";
 
 const Container = () => {
   return (
     <View style={styles.container}>
-      <ProductImage />
+      <Content />
     </View>
   );
 };

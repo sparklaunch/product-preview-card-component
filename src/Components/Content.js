@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Text, View } from "react-native";
+import AddToCartButton from "./AddToCartButton";
 
-const ProductImage = () => {
+const Content = () => {
   return (
     <View style={styles.productContainer}>
       <Image
@@ -22,6 +23,9 @@ const ProductImage = () => {
           <View style={styles.priceLabel}>
             <Text style={styles.discountedPrice}>$149.99</Text>
             <Text style={styles.normalPrice}>$169.99</Text>
+          </View>
+          <View>
+            <AddToCartButton />
           </View>
         </View>
       </View>
@@ -62,7 +66,8 @@ const styles = StyleSheet.create({
   },
   priceLabel: {
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
+    marginBottom: 16
   },
   discountedPrice: {
     fontSize: 36,
@@ -77,4 +82,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ProductImage;
+export default Content;
