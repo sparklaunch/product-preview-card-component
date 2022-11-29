@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import Container from "./src/Components/Container";
 
 const App = () => {
   return (
     <View style={styles.backdrop}>
-      <Text>Hello, World!!</Text>
+      <Container />
     </View>
   );
 };
