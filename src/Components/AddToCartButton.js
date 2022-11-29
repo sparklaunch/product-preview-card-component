@@ -20,7 +20,15 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 16,
     flexDirection: "row",
-    justifyContent: "center"
+    justifyContent: "center",
+    shadowColor: "gray",
+    shadowOffset: {
+      width: 0,
+      height: 3
+    },
+    shadowRadius: 10,
+    shadowOpacity: 0.5,
+    elevation: 5
   },
   buttonText: {
     color: "white",
